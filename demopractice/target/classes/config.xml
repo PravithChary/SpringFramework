@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Bean definitions and context configuration -->
+
+    <!--    Bean one -->
+    <bean class="org.example.Student" name="student1" >
+        <property name="rollNum" value="200123028"/>
+        <property name="name" value="Pravith"/>
+        <property name="address" value="Telangana"/>
+    </bean>
+
+    <!--    Bean two -->
+    <bean class="org.example.Student" name="student2" >
+        <property name="rollNum" value="200123029"/>
+        <property name="name" value="Ranjith"/>
+        <property name="address" value="Bihar"/>
+    </bean>
+
+    <!-- tried to use p-schema but it's not supported in new versions    -->
+    <!--    <bean class="org.example.Student" name="student3" p:rollNum = "200123030" p:name="Raju" p:address="Goa" />-->
+
+
+
+</beans>

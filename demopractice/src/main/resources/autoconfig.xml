@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Bean definitions and context configuration -->
+    <bean class="org.example.auto.wire.Address" name="address">
+        <property name="street" value="Street 1"/>
+        <property name="city" value="City 1"/>
+    </bean>
+
+    <bean class="org.example.auto.wire.Address" name="address1">
+        <property name="street" value="Street 2"/>
+        <property name="city" value="City 2"/>
+    </bean>
+
+    <bean class="org.example.auto.wire.Emp" name="emp1" autowire="constructor" />
+
+</beans>
